@@ -192,58 +192,8 @@
 	}
 }
 </style>
-<script>
-	jQuery(document).ready(function($){
-		$(".closepopup, .decline").click(function(){
-			$(".openfull").toggleClass("openfull");
-		});
-		var popcounter = 0;
-		var scrollcount = 0;
-					var pageidout = 'pageidout480';
-			if (typeof Cookies.get(pageidout) === 'undefined'){
-				var mousecount = 0;
-				document.onmouseleave = function(){
-					if (mousecount < 1) {
-						$(".fullpopupwrap").addClass("openfull");
-						mousecount = mousecount + 1; 
-						Cookies.set(pageidout, '2', 1);
-					}
-				}
-			}
-					var pageidscroll = 'pageidscroll480';
-			if (typeof Cookies.get(pageidscroll) === 'undefined'){
-				$(document).scroll(function(){
-					if (scrollcount < 1) {
-						if ( $(document).scrollTop() < 1 ) {
-							scrollcount = scrollcount + 1;
-							$(".fullpopupwrap").addClass("openfull");
-							Cookies.set(pageidscroll, '2', 1);
-						}
-					}
-				});
-			}
-				
-		
-	});
-</script>
-<div class="fullpopupwrap ">
-	<div class="popupcont tablecell almiddle">
-					<div class="closepopup"><i class="fa fa-times" aria-hidden="true"></i></div>
-				<div class="popcont">
-						<a class="poplogo" href="#LINKHERE1">
-				<img src="assets/HearTech-labs-FDA-approved-logo.jpg" class="attachment-full size-full wp-post-image" alt="" width="300" height="140">			</a>
-						<div class="popcontent">
-				<h1 style="text-align: center;"><span style="color: #ffffff;">LIMITED TIME SALE!</span></h1>
-<h1 style="text-align: center;"><strong><span style="color: #ffffff;">Get HearTech CIC for ONLY&nbsp;<del>$999</del>&nbsp;$249</span></strong></h1>
-<h3 style="text-align: center;"><strong><span style="color: #ffffff;">Includes a 45-day Money-Back GUARANTEE!</span></strong></h3>
-			</div>
-							<a href="#LINKHERE1" class="table popaclink">
-					<b>CLAIM this OFFER &gt;&gt;</b>				</a>
-							<div class="decline">
-					No, thanks, I'll pay full price later on!				</div>
-					</div>
-	</div>
-</div><div class="new-container">
+
+<div class="new-container">
 	<div class="sub-container">
 		
 		<div class="topdes">
